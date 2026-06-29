@@ -4,28 +4,49 @@ A power tool for web security testing — scanner, repeater, intruder, and AI ag
 
 ---
 
-<img src="https://hugin.nu/assets/og-card.png" alt="Hugin — a power tool for web security testing" width="100%">
+<img src="https://raw.githubusercontent.com/HuginCyber/Hugin/main/assets/og-card.png" alt="Hugin — a power tool for web security testing" width="100%">
 
 ## What is Hugin?
 
-Hugin is a local-first security testing tool built in Rust. One binary, no accounts, no telemetry.
+Hugin is a local-first security testing tool built in Rust. One binary, no accounts, no telemetry. You see everything and send anything.
 
-- **Intercepting proxy** — see and tamper with every request and response
-- **Active scanner** — 46 checks that send payloads and confirm real bugs
-- **Passive scanner** — 42 checks that analyze traffic without sending anything
-- **Intruder** — fuzz, brute, and race against any target
-- **Repeater** — capture, modify, and replay requests
-- **AI agent** — 162 MCP tools for LLM-driven testing workflows
-- **Race condition engine** — find TOCTOU bugs with parallel request firing
-- **OOB detection** — capture blind interactions via DNS, HTTP, and SMTP
+### Core capabilities
+
+- **Intercepting proxy** — HTTP/1.1, HTTP/2, HTTP/3, WebSocket, WebTransport. TLS fingerprint passthrough. Live tampering.
+- **Active scanner** — 46 checks that send payloads and confirm real bugs. SQLi, XSS, SSTI, SSRF, JWT, OAuth, GraphQL, race conditions, request smuggling, and more.
+- **Passive scanner** — 42 checks that analyze traffic without sending anything.
+- **Intruder** — fuzzer with payload generators, processors, grep matching, and rate control.
+- **Repeater** — capture, modify, and replay any request across HTTP/1.1, HTTP/2, and HTTP/3.
+- **AI agent** — 162 MCP tools. Connect Claude, Cursor, or any MCP-compatible LLM to drive the proxy, run scans, and triage findings.
+- **Race condition engine** — single-packet and last-byte sync for TOCTOU bugs.
+- **OOB detection** — built-in OAST server. DNS, HTTP, HTTPS, SMTP, LDAP, FTP, SMB.
+
+### Pricing
+
+- **Community** — free, forever. No account required.
+- **Pro** — 7 EUR/month flat. Race engine, BAC audit, smuggling, WASM modules, Lua extensions, collaboration, full MCP surface.
+- **Students** — 12 months of Pro free with GitHub Student Developer Pack.
+
+### Privacy
+
+No telemetry. No analytics. No crash reporting. Your traffic never leaves your machine. Accounts are anonymous IDs. Payments via Stripe or Bitcoin/Monero. No KYC.
+
+## Repositories
+
+| Repo | Description |
+|------|-------------|
+| [Hugin](https://github.com/HuginCyber/Hugin) | Community hub — bug reports, feature requests, discussions, releases |
+| [synaps-community](https://github.com/HuginCyber/synaps-community) | WASM vulnerability-detection modules for the Hugin scanner |
+| [quinn](https://github.com/HuginCyber/quinn) | Fork of quinn with `accepted_0rtt()` exposed for Hugin H3 MITM |
 
 ## Links
 
 - **Website:** [hugin.nu](https://hugin.nu)
+- **Documentation:** [hugin.nu/docs](https://hugin.nu/docs)
+- **Download:** [hugin.nu/download](https://hugin.nu/download)
 - **X / Twitter:** [@HuginCyber](https://x.com/HuginCyber)
 - **LinkedIn:** [Hugin Cyber](https://www.linkedin.com/company/hugin-cyber)
 
-## Community is free. Pro is 7 EUR/month.
+## License
 
-Download at [hugin.nu/download](https://hugin.nu/download).
-
+Hugin is proprietary software. The Community tier is free to use. See [hugin.nu/pricing](https://hugin.nu/pricing) for details.
