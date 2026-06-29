@@ -20,6 +20,12 @@ Hugin is a local-first security testing tool built in Rust. One binary, no accou
 - **AI agent** — 162 MCP tools. Connect Claude, Cursor, or any MCP-compatible LLM to drive the proxy, run scans, and triage findings.
 - **Race condition engine** — single-packet and last-byte sync for TOCTOU bugs.
 - **OOB detection** — built-in OAST server. DNS, HTTP, HTTPS, SMTP, LDAP, FTP, SMB.
+- **Crawler** — static + headless browser crawling, JS analysis, anti-fingerprinting.
+- **TLS fingerprint mirage** — JA3/JA4 mimicry, H2 fingerprint, header/font/navigator spoofing.
+- **JS bundle engine** — deminify, source map extraction, DOM XSS sink analysis.
+- **Mobile analysis** — Android/iOS static analysis, APK decompilation, Frida dynamic instrumentation.
+- **Lua extensions** — 14 hook points, permission-gated sandbox.
+- **Synaps WASM modules** — community scanner modules, sandboxed via Wasmtime.
 
 ### Pricing
 
@@ -37,7 +43,6 @@ No telemetry. No analytics. No crash reporting. Your traffic never leaves your m
 |------|-------------|
 | [Hugin](https://github.com/HuginCyber/Hugin) | Community hub — bug reports, feature requests, discussions, releases |
 | [synaps-community](https://github.com/HuginCyber/synaps-community) | WASM vulnerability-detection modules for the Hugin scanner |
-| [quinn](https://github.com/HuginCyber/quinn) | Fork of quinn with `accepted_0rtt()` exposed for Hugin H3 MITM |
 
 ## Links
 
