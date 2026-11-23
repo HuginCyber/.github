@@ -51,6 +51,9 @@ No telemetry. No analytics. No crash reporting. Your traffic never leaves your m
 - **Download:** [hugin.nu/download](https://hugin.nu/download)
 - **X / Twitter:** [@HuginCyber](https://x.com/HuginCyber)
 - **LinkedIn:** [Hugin Cyber](https://www.linkedin.com/company/hugin-cyber)
+- **Built by:** [Dodu Security](https://dodu.se) — the studio behind Hugin, and
+  fixed-fee smart contract and web application audits for protocol teams
+  ([Web3 landing page](https://dodusecurity.xyz))
 
 ## License
 
